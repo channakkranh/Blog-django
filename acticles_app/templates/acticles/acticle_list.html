@@ -7,8 +7,16 @@
     <title>acticle-list</title>
 </head>
 <body>
-    <h1>hello list acticles</h1>
-    <p>hello acticles list</p>
-    
+    <h1>Welcome to our Acticles Blog </h1>
+    <div class="acticles">
+        {% for acticle in acticles %}
+        <div class="acticle">
+           <h2><a href=""> {{ acticle.title }}</a></h2>
+           <p>{{acticle.body}}</p>
+           <p>{{acticle.date}}</p>
+        </div>
+    {% endfor %}
+       
+    </div>
 </body>
 </html>
