@@ -11,6 +11,7 @@
     <div class="acticles">
         {% for acticle in acticles %}
         <div class="acticle">
+            <img src="{{acticle.thumn.url}}"/>
            <h2><a href=""> {{ acticle.title }}</a></h2>
            <p>{{acticle.body}}</p>
            <p>{{acticle.date}}</p>

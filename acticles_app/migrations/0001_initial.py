@@ -21,4 +21,5 @@ class Migration(migrations.Migration):
                 ('date', models.DateTimeField(auto_now_add=True)),
             ],
         ),
+        
     ]
